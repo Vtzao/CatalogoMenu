@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #f2f5f7;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.visuallyhidden {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  opacity: 0;
+  
+}
+body{
+  overflow-x: hidden;
+}
+nav{
+  height: 5rem;
+  width: 100vw;
+  background-color: #39424E;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  z-index: 10;
+}
+
+/*Styling logo*/
+.logo{
+  padding:2vh 5vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.logo a{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 5px;
+  font-size: 12pt;
+  font-weight: 300;
+}
+.logo img {
+  margin-top: 30px;
+  height: 5rem;
+  width: 5rem;
+}
+
+/*Styling Links*/
+.nav-links{
+  display: flex;
+  list-style: none; 
+  width: 88vw;
+  padding: 0 0.7vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+}
+.nav-links li a{
+  font-size: 10pt;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+  color: #247752;
+}
+.nav-links li {
+  position: relative;
+}
+.nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #247752;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+  width: 80%;
+}
+
+/*Styling Buttons*/
+.btn{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login-button{
+  color: #39424E;
+  background-color: #43aa8d;
+  border: 1.5px solid #43aa8d;
+  border-radius: 1em;
+  padding: 0.4rem 2rem;
+  margin-left: 5vw;
+  font-size: 13pt;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+.login-button:hover {
+  color: #ffffff;
+  background-color: #1b5c3e;
+  border:1.5px solid #1b5c3e;
+  transition: all ease-in-out 350ms;
+}
+.join-button{
+  color: #39424E;
+  background-color: #81B64B;
+  border: 1.5px solid #619132;
+  border-radius: 1em;
+  padding: 0.4rem 2rem;
+  margin-left: 2vw;
+  font-size: 13pt;
+  font-weight: 600;
+  cursor: pointer;
+}
+.join-button:hover {
+  color: #f2f5f7;
+  background-color: #247752;
+  border:1.5px solid #247752;
+  transition: all ease-in-out 350ms;
+}
+
+/*Estilo do Menu Hamburguer*/
+.hamburger div{
+  width: 30px;
+  height:3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger{
+  display: none;
+}
+
+/*Sessão Home*/
+*{box-sizing:border-box}
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/background.jpg);
+  padding: 50px;
+  overflow: hidden;
+}
+.container{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.links > h3{
+  text-align: center;
+  font-size: 15pt;
+  font-weight: 600;
+}
+.icons{
+  margin: 10px;
+  justify-content:space-between;
+}
+.icons .ic{
+  background: #619132;
+  color: #fff;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #619132;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  text-transform:inherit;
+}
+.icons a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  color: #fff;
+}
+.icons .ic:hover{
+  background: #81B64B;
+  border: 2px solid #81B64B;
+}
+
+/*Sessão Impressoras*/
+.content {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.impressoras{
+  width: 100vw;
+  padding: 100px;
+  background-color: #39424E;
+}
+
+section .filter-card {
+  width: 90%;
+  height: 8vw;
+  background: #293038;
+  border-radius: 8px;
+  padding: 10px 10px;
+  margin: 10px 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.title-wrapper-catalog {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  margin-left: 35%;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 15pt;
+}
+.title-wrapper-catalog > h3{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+section .card-wrapper {
+  max-width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 30px;
+  padding-top: 50px;
+}
+
+section .card-item {
+  height: 400px;
+  background: #293038;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-content {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-item img {
+  width: 85%;
+}
+
+.card-item h4 {
+  width: 90%;
+}
+
+.card-item p {
+  width: 90%;
+  font-style: italic;
+  color: #898b96;
+}
+
+.card-item button {
+  width: 100%;
+  padding: 15px 50px;
+  border: none;
+  background: #247752;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.card-item button:hover {
+  background: #184732;
+  color: #fff;
+}
+
+/*Sessão Tutoriais*/
+.tutorials{
+  display: flex;
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+  background-color: #184732;
+}
+footer{
+  width: 100vw;
+  background: #0d251a;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a{
+  color: #207a3e;
+  text-decoration: none;
+}
+footer span a:hover{
+  color: #619132;
+  text-decoration: underline;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+  nav{
+      position: fixed;
+      z-index: 3;
+  }
+  .hamburger{
+      display:block;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      transition: all 0.7s ease;
+  }
+  .nav-links{
+      position: fixed;
+      background: #131418;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+  }
+  .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .nav-links li:nth-child(1){
+      transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2){
+      transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3){
+      transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4){
+      transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5){
+      transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6){
+      transition: all 0.5s ease 0.9s;
+      margin: 0;
+  }
+  .nav-links li:nth-child(7){
+      transition: all 0.5s ease 1s;
+      margin: 0;
+  }
+  li.fade{
+      opacity: 1;
+  }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  transition: all 0.7s ease;
+  width:0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
